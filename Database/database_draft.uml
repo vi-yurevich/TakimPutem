@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>d661a8f8-b8d5-4cdb-b859-c41c172b88a6.SCHEMA:takimputem_draft_2.public</OriginalElement>
+  <nodes>
+    <node x="-331.1851851851852" y="641.0">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.payment</node>
+    <node x="221.0" y="356.5">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event_image</node>
+    <node x="423.0" y="356.5">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event_video_record</node>
+    <node x="-451.0" y="356.5">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event_video</node>
+    <node x="-560.0" y="-293.0">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event</node>
+    <node x="-912.0" y="328.0">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.discount</node>
+    <node x="-53.0" y="230.0">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.person</node>
+    <node x="-650.0" y="328.0">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.timetable</node>
+    <node x="123.81481481481478" y="697.5">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.actor_event</node>
+    <node x="-252.0" y="356.5">d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.tags</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.payment" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.timetable" relationship="REFERENCES">
+      <point x="-55.75" y="-109.5" />
+      <point x="-275.4351851851852" y="615.0" />
+      <point x="-560.5" y="615.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.payment" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.person" relationship="REFERENCES">
+      <point x="55.75" y="-109.5" />
+      <point x="-163.93518518518522" y="615.0" />
+      <point x="10.5" y="615.0" />
+      <point x="-63.5" y="179.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="-132.5" y="235.5" />
+      <point x="-427.5" y="198.0" />
+      <point x="-580.0" y="198.0" />
+      <point x="-580.0" y="-57.5" />
+      <point x="-265.0" y="-0.0" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event_image" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="0.0" y="-53.0" />
+      <point x="311.5" y="209.0" />
+      <point x="-162.5" y="209.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.discount" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="0.0" y="-81.5" />
+      <point x="-791.0" y="209.0" />
+      <point x="-162.5" y="209.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.timetable" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="0.0" y="-81.5" />
+      <point x="-560.5" y="209.0" />
+      <point x="-162.5" y="209.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.actor_event" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="44.75" y="-53.0" />
+      <point x="258.0648148148148" y="615.0" />
+      <point x="412.5" y="615.0" />
+      <point x="412.5" y="209.0" />
+      <point x="-162.5" y="209.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.tags" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="0.0" y="-53.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event_video" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="0.0" y="-53.0" />
+      <point x="-361.5" y="209.0" />
+      <point x="-162.5" y="209.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.actor_event" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.person" relationship="REFERENCES">
+      <point x="-44.75" y="-53.0" />
+      <point x="168.56481481481478" y="615.0" />
+      <point x="137.5" y="615.0" />
+      <point x="63.5" y="179.5" />
+    </edge>
+    <edge source="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event_video_record" target="d661a8f8-b8d5-4cdb-b859-c41c172b88a6.TABLE:takimputem_draft_2.public.event" relationship="REFERENCES">
+      <point x="0.0" y="-53.0" />
+      <point x="552.0" y="209.0" />
+      <point x="-162.5" y="209.0" />
+      <point x="132.5" y="235.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.486050836949783" showDependencies="false" x="-105.5" y="293.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
